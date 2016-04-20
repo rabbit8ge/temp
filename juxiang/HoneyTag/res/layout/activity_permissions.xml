@@ -1,0 +1,487 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AboutActivity" >
+
+    <com.example.view.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/huise5" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/huise5" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/huise6"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_01"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text=""
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_02"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="1级"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_03"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="2级"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_04"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="3级"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_05"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="4级"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/huise5" />
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_06"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/huise6"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="关注"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_07"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="10/天"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_08"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="无限制"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_09"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="无限制"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_10"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="无限制"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/huise5" />
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_11"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/huise6"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="发帖"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_12"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="10/每天"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_13"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="无限制"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_14"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="无限制"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_15"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="无限制"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/huise5" />
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_16"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/huise6"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="条件"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_17"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="会员积分为0时，会员资格被冻结。"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_18"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="坚持在网1个月保持活跃;持续发表有质量的话题或评论。"
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_19"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text=""
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+
+            <TextView
+                android:id="@+id/tv_20"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text=""
+                android:textColor="@color/black1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/huise5" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/huise5" />
+    </TableLayout>
+
+</LinearLayout>

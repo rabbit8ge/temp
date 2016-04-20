@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <LinearLayout
+        android:id="@+id/title_l"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:gravity="center"
+            android:id="@+id/chongzhifanhui2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/fragment2_hui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_jia" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragment2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:text="发现"
+            android:textColor="#000000"
+            android:textSize="18sp" 
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/chongzhijia2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/fragment2_jia"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/main_jia" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#f3f3f3" 
+        android:visibility="gone"/>
+    
+        <LinearLayout 
+        android:visibility="gone"
+        android:id="@+id/fragment2_wuwife"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/wuwife">
+        
+        <ImageButton 
+            android:visibility="gone"
+            android:id="@+id/fragment2_wuwife_btn"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wuwife_btn"/>
+        
+    </LinearLayout>
+    <com.example.view.RefreshLayout
+        android:id="@+id/fragment2_wipe_refresh_widget"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/fragment2_main_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#f3f3f3"
+            android:divider="#00000000"
+            android:scrollbars="none" >
+        </ListView>
+    </com.example.view.RefreshLayout>
+
+
+</LinearLayout>

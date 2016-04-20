@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_chat_title"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/mLlLeft"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+           android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_nav_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+        
+            android:checked="false"
+            android:clickable="false"
+            android:padding="13dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/login_fanhui" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_nav_title"
+        style="@style/textStyle_black_18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/mLlRight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_nav_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:checked="false"
+            android:clickable="false"
+            android:padding="13dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_nav_right"
+            style="@style/textStyle_black_16sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:clickable="false"
+            android:gravity="center"
+            android:paddingRight="13dp"
+            android:text="规则"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title_l"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/chongzhifanhui"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <ImageButton
+                android:id="@+id/fragment3_fanhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/main_jia" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragment3_title"
+            style="@style/textStyle_black_18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="10"
+            android:gravity="center_horizontal"
+            android:text="@string/colume_page" />
+
+        <LinearLayout
+            android:id="@+id/chongzhifanhui3"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <ImageButton
+                android:id="@+id/fragment3_jia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/main_jia" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/huise5" />
+
+    <LinearLayout
+        android:id="@+id/lm_wuwife"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/wuwife"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/lm_wuwife_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/wuwife_btn"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment3_biaoqinga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/biaoqinga"
+        android:gravity="center"
+        android:text="这里空空如也，去其他地方逛逛吧"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <com.example.view.RefreshLayout
+        android:id="@+id/fragment3_wipe_refresh_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/fragment3_main_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:divider="#00000000"
+            android:dividerHeight="2sp"
+            android:scrollbars="none" >
+        </ListView>
+    </com.example.view.RefreshLayout>
+
+</LinearLayout>

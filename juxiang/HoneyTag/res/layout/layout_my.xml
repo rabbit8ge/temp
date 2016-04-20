@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <!-- 顶部导航 -->
+
+
+    <!--
+    <LinearLayout
+        android:id="@+id/sbsb"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f3f3f3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/my_huati"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_huati"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/my_huati_send"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.1sp"
+            android:layout_height="wrap_content"
+            android:background="#AAAAAA" />
+
+        <LinearLayout
+            android:id="@+id/my_shoucang"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_shoucang"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/my_shoucang_send"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.1sp"
+            android:layout_height="wrap_content"
+            android:background="#AAAAAA" />
+
+        <LinearLayout
+            android:id="@+id/my_guanzhu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_guanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/my_guanzhu_send"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/my_huati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/radio_shape_enter2"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/checkBox01"
+            style="@style/textStyle_black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:clickable="false"
+            android:gravity="center"
+            android:button="@null"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/my_topic" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/huise6" />
+
+    <LinearLayout
+        android:id="@+id/my_shoucang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_participation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/radio_shape_enter2"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/checkBox02"
+            style="@style/textStyle_black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_selector2"
+            android:checked="false"
+            android:clickable="false"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/my_attend" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/huise6" />
+
+    <LinearLayout
+        android:id="@+id/my_guanzhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_focusOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:visibility="gone" 
+            android:src="@drawable/radio_shape_enter2" />
+
+        <CheckBox
+            android:id="@+id/checkBox03"
+            style="@style/textStyle_black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_selector2"
+            android:checked="false"
+            android:clickable="false"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/my_praise"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+
+ <string name="com_facebook_dialogloginactivity_ok_button" translatable="false">OK</string>
+    <string name="com_facebook_requesterror_password_changed" translatable="false">Your Facebook password has changed. Please log into this app again to reconnect your Facebook account.</string>
+    <string name="com_facebook_requesterror_reconnect" translatable="false">Please log into this app again to reconnect your Facebook account.</string>
+    <string name="com_facebook_requesterror_permissions" translatable="false">This app doesn’t have permission to do this. To change permissions, try logging into the app again.</string>
+</resources>

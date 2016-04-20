@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#EBECED"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/chat_more"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="horizontal" >
+		  <LinearLayout
+            android:id="@+id/chat_yuying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/details_image_comment"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/micro" />
+	
+            <TextView
+                android:id="@+id/details_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="语音输入" />
+        </LinearLayout>
+      
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/face_dots_container"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

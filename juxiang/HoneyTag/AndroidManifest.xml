@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.honeytag1"
+    android:versionCode="16041500"
+    android:versionName="1.1.41" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <!-- 系统对话框权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 讯飞权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 友盟权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 测试权限 -->
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 开启闪光权限 -->
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <permission
+        android:name="com.herotculb.qunhaichat.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signatureOrSystem" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户。 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于评论模块分享位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于评论模块分享位置信息 -->
+    <application
+        android:name="com.example.utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/notitle" >
+
+        <!-- 讯飞移动统计分析 -->
+        <meta-data
+            android:name="IFLYTEK_APPKEY"
+            android:value="&apos;56d00bb3&apos;" />
+        <meta-data
+            android:name="IFLYTEK_CHANNEL"
+            android:value="YINGYONGBAO" />
+
+        <!-- 设置AppKey -->
+        <meta-data
+            android:name="TESTIN_APPKEY"
+            android:value="d9917364e0c253c2aa6fe711cba56d9d" />
+        <!-- 设置渠道信息 -->
+        <meta-data
+            android:name="TESTIN_CHANNEL"
+            android:value="YINGYONGBAO" />
+        <!-- 设置友盟AppKey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56cbdc2867e58eccdd000a91" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="YINGYONGBAO" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" >
+        </service>
+
+        <!-- 消息推送 -->
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="568bed02227a0f54e175c50a48a29208" >
+        </meta-data>
+
+        <activity
+            android:name="com.example.honeytag1.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.honeytag1.MainActivity"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.my.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.example.my.RegistActivity"
+            android:label="@string/title_activity_regist"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.ForgetActivity"
+            android:label="@string/title_activity_forget"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.SetUpActivity"
+            android:label="@string/title_activity_set_up"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.ModifyPassWordActivity"
+            android:label="@string/title_activity_modify_pass_word"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.GeneralActivity"
+            android:label="@string/title_activity_general"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.IdentityActivity"
+            android:label="@string/title_activity_identity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.honeytag1.PublishActivity"
+            android:label="@string/title_activity_publish"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.example.setup.AbilityvalueActivity"
+            android:label="@string/title_activity_abilityvalue"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.CreditvalueActivity"
+            android:label="@string/title_activity_creditvalue"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.my.HanWangRegistActivity"
+            android:label="@string/title_activity_han_wang_regist"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.honeytag1.MainDetailsActivity"
+            android:label="@string/title_activity_main_details"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.honeytag1.WebViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.honeytag1.RemindActivity"
+            android:label="@string/title_activity_remind"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.my.PhoneVerificationActivity"
+            android:label="@string/title_activity_phone_verification"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.CredActivity"
+            android:label="@string/title_activity_cred"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.AbilltyActivity"
+            android:label="@string/title_activity_abillty"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.honeytag1.ColumnDetailsActivity"
+            android:label="@string/title_activity_column_details"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.ChangebusinesscardActivity"
+            android:label="@string/title_activity_changebusinesscard"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.AddbusinesscardActivity"
+            android:label="@string/title_activity_changebusinesscard"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.VerificationcardActivity"
+            android:label="@string/title_activity_verificationcard"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.honeytag1.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.example.honeytag1.TopicDetailsActivity"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.example.honeytag1.TopicImageActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.example.setup.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.Addbusinesscard01Activity"
+            android:label="@string/title_activity_setting"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.MoreActivity"
+            android:label="@string/title_activity_more"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 我的账户 -->
+        <activity
+            android:name="com.example.setup.MyAccountActivity"
+            android:label="@string/title_activity_myAccount"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 新消息通知 -->
+        <activity
+            android:name="com.example.setup.NewAlertsActivity"
+            android:label="@string/title_activity_more"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.setup.MyGradesActivity"
+            android:label="@string/title_activity_mygrades"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 规则 -->
+        <activity
+            android:name="com.example.setup.MyGradesRules"
+            android:label="@string/title_activity_mygrades"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 不同的等级权限 -->
+        <activity
+            android:name="com.example.setup.PermissionsActivity"
+            android:label="@string/title_activity_mygrades"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 扣分规则 -->
+        <activity
+            android:name="com.example.setup.PointDeductionRulesActivity"
+            android:label="@string/title_activity_mygrades"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 加分规则 -->
+        <activity
+            android:name="com.example.setup.BonusRulesActivity"
+            android:label="@string/title_activity_mygrades"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 用户协议 -->
+        <activity
+            android:name="com.example.setup.UserAgreementActivity"
+            android:label="@string/title_activity_mygrades"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 更新日志 -->
+        <activity
+            android:name="com.example.setup.UpdateLogActivity"
+            android:label="@string/title_activity_UpdateLog"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 更新日志 详情 -->
+        <activity
+            android:name="com.example.setup.UpdateLogDetailActivity"
+            android:label="@string/title_activity_UpdateLogDetail"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.picture.CropImageActivity"
+            android:label="@string/title_activity_cropimage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 名片旋转 -->
+        <activity
+            android:name="com.example.picture.RotatingActivity"
+            android:label="@string/title_activity_verificationcard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 网络监听广播 -->
+        <receiver
+            android:name="com.example.receiver.NetListenerReceiver"
+            android:exported="false"
+            android:label="NetworkConnection" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Home监听广播 -->
+        <!--
+        <receiver
+            android:name="com.example.receiver.HomeKeyEventReceiver"
+            android:exported="false"
+            android:label="NetworkConnection" >Intent.ACTION_CLOSE_SYSTEM_DIALOGS
+            <intent-filter>
+                <action android:name="android.app.action." />
+            </intent-filter>
+        </receiver>
+        -->
+
+
+        <!-- 友盟 -->
+        <activity
+            android:name="com.example.umeng.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <!-- 新浪微博 -->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <!-- wechat callback -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- tencent -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105216516" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+    </application>
+
+</manifest>

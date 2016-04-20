@@ -1,0 +1,688 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AboutActivity" >
+
+    <com.example.view.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/huise5" />
+    
+    <TextView
+       android:id="@+id/tv_title01"
+        style="@style/textStyle_black_14sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawablePadding="10dp"
+        android:gravity="left|top"
+        android:lineSpacingExtra="3dp"
+        android:text="行家说1.2 更新日志(2016年3月11日)" />
+    
+      <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+   <!--  <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            
+              <TextView
+        style="@style/textStyle_black_14sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawablePadding="10dp"
+        android:gravity="left|top"
+        android:lineSpacingExtra="3dp"
+        android:text="行家说1.2 更新日志(2016年3月11日)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="新增了评论分享功能，可以将优质内容传递给更多人" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="新增了语言输入功能，解放了双手让语言更自由" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="新增了评论举报功能" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="新增了名片报错和删除功能" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="新增了账户缓存" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="新增了版本的日志" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="新增了规则，将加分与减分规则合并" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="优化了表情" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="优化了注册流程与逻辑" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="优化了忘记密码的逻辑" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="优化了登录状态的问题" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="优化了评论的加载策略" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="优化了我等级" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="优化了输入框光标的颜色" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="优化了话题详情页的逻辑" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="优化了图片加载时的系统图片" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="优化了图片展示，可放大缩小" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="优化了首页的加载策略" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="修复了apk不能安装的问题" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="修复评论下拉加载BUG" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="修复了更新时apk下载的问题" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="修复了精彩评论的加载" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="修复了提醒数量" />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView> -->
+
+  
+
+</LinearLayout>

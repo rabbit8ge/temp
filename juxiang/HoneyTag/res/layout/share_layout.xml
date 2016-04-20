@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#fff"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/wxrl"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/umeng_socialize_shareboard_item_background" >
+
+            <ImageView
+                android:id="@+id/wx_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/umeng_socialize_wechat" />
+
+            <TextView
+                android:id="@+id/wx_pltform_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/wxfriends"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wxcrl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:background="@drawable/umeng_socialize_shareboard_item_background" >
+
+            <ImageView
+                android:id="@+id/wxc_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/umeng_socialize_wxcircle" />
+
+            <TextView
+                android:id="@+id/wxc_pltform_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/wxcircle"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/qqrl"
+             android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:background="@drawable/umeng_socialize_shareboard_item_background" >
+
+            <ImageView
+                android:id="@+id/qq_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/umeng_socialize_qq_on" />
+
+            <TextView
+                android:id="@+id/qq_pltform_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/qqfriends"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/qqkrl"
+             android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:background="@drawable/umeng_socialize_shareboard_item_background" >
+
+            <ImageView
+                android:id="@+id/qqk_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/umeng_socialize_qzone_on" />
+
+            <TextView
+                android:id="@+id/qqk_pltform_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/qqRoom"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wbrl"
+             android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:visibility="invisible"
+            android:background="@drawable/umeng_socialize_shareboard_item_background" >
+
+            <ImageView
+                android:id="@+id/wb_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/umeng_socialize_sina_on" />
+
+            <TextView
+                android:id="@+id/wb_pltform_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/wb"
+                android:textSize="11sp" />
+        </RelativeLayout>
+        <RelativeLayout
+             android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"
+            android:background="@drawable/umeng_socialize_shareboard_item_background"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/umeng_socialize_sina_on" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/wb"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </LinearLayout>
+     <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="1dp"
+        android:background="@color/huise5" />
+    <TextView
+        android:id="@+id/cancer_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textSize="18sp" />
+
+   
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dip"
+    android:orientation="vertical" >
+
+    <!-- 底部导航 -->
+
+    <LinearLayout
+        android:id="@+id/sbsb"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/map_footer_btn1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:background="@null" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/map_footer_btn5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/home_enter"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/tv_home"
+                        style="@style/textStyle_black_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:text="@string/first_page" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="top|right|center" >
+
+                    <TextView
+                        android:id="@+id/main_tab_unread_tv_layout"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/tab_unread_bg"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:gravity="left"
+                        android:textColor="@android:color/white"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/map_footer_btn2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/map_footer_btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/faxian_lanmu_send"
+                android:clickable="false"
+                android:focusable="false"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tv_column"
+                style="@style/textStyle_black_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="-20dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/colume_page"
+                android:textColor="@color/huise3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/map_footer_btn3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/map_footer_btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_seletor"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tv_chat"
+                style="@style/textStyle_black_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_page"
+                android:textColor="@color/huise3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/map_footer_btn4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/map_footer_btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_my_send"
+                android:clickable="false"
+                android:focusable="false"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tv_my"
+                style="@style/textStyle_black_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="我的"
+                android:textColor="@color/huise3" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

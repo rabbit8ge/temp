@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240sp"
+    android:layout_height="40sp"
+    android:background="#00000000" >
+
+    <Button
+        android:id="@+id/popbtn"
+        android:layout_width="240sp"
+        android:layout_height="40sp"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="复制"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+</RelativeLayout>

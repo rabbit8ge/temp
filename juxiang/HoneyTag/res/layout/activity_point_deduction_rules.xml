@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AboutActivity" >
+
+    <com.example.view.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/huise5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_16sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="10dp" 
+            android:onClick="onClick"
+            android:text="严重违法(每次-20;累积2次直接扣光):政治错误、内幕交易。" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_16sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="10dp"
+            android:onClick="onClick"
+            android:text="违法(每次-10，累积3次回到10):色情暴力。" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_16sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="10dp"
+            android:onClick="onClick"
+            android:text="违规(每次-5，累积3次回到20):泄露联系方式等。" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_16sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="10dp"
+            android:onClick="onClick"
+            android:text="垃圾(每次-3，累积3次每次-6，积累5次每次-12):无任何意义的水贴。" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_16sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="10dp"
+            android:onClick="onClick"
+            android:text="重复(每次-2，累积3次每次-4，累积5次每次-8):抄袭。" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            style="@style/textStyle_black_16sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="10dp"
+            android:onClick="onClick"
+            android:text="无关(每次-1，累积3次每次-2，累积5次每次-4):与APP无关的话题。" />
+    </LinearLayout>
+
+</LinearLayout>

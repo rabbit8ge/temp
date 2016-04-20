@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--   黑色系列 -->
+      <color name="black_light">#353535</color>
+    
+    <!-- 白三色 -->
+    <!-- <color name="white">#ffffffff</color> -->
+    <color name="white_light">#999999</color>
+    <color name="no_color">#00000000</color>
+    <color name="bg_headler">#1a1133</color>
+    <color name="item_maintain_tv">#8c9aa0</color>
+    <!-- by wgy -->
+    <color name="c_8c9aa0">#8c9aa0</color>
+    <color name="c_d517c5">#d517c5</color>
+
+    <!-- end -->
+    <!-- 浅蓝色 -->
+    <color name="lanse">#ff7f50</color>
+    <color name="qianlanse">#7D9DD6</color>
+    <color name="blue1">#151890</color>
+    <color name="blue2">#105f9a</color>
+
+    <!-- 红色 -->
+     <color name="red">#f23100</color>
+    <color name="hongse">#FF7256</color>
+    <color name="huangse">#4ee4ff</color>
+    <!-- 灰色 -->
+    <color name="huise">#CDC9C9</color>
+    <color name="huise1">#636363</color>
+    <color name="huise2">#d8dbde</color>
+    <color name="huise3">#969BA0</color>
+    <color name="huise4">#bec3c8</color>
+    <color name="huise5">#a8a8a8</color>
+    <color name="huise6">#f0f0f0</color>
+    <color name="huise7">#c8c8c8</color>
+    <color name="huise8">#f0f0f0</color>
+    <color name="huise9">#a0a0a0</color>
+    <color name="huise10">#b8b8b8</color>
+    <color name="huise11">#8d8d8d</color>
+    <color name="huise12">#e6e6e6</color>
+    <color name="white_bg_text">#bec3c8</color>
+    <color name="tab_textcolor_pressed">#ffffff</color>
+    <color name="tab_textcolor">#8cddcd</color>
+    <color name="white">#FFFFFF</color>
+    <color name="select_radio_foot">#000000</color>
+    <color name="footer_radio">#747c89</color>
+    <!-- 绿色 -->
+    <color name="green">#1abc9c</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+     <color name="translucent">#e0000000</color>
+
+    <!-- vehicle bg -->
+    <color name="vehicle_top_bg">#f2f5f9</color>
+    <color name="text">#75b9e6</color>
+    <color name="condi_bg">#75b9e6</color>
+    <color name="vehicle_con_text">#8c9aa0</color>
+    <color name="vehicle_item_text">#48606d</color>
+    <color name="Bback">#7f000000</color>
+    <color name="black">#000000</color>
+    <color name="black1">#6e7378</color>
+    <color name="vehicle_line">#e1e1e1</color>
+    <color name="Bback2_1">#d3d9dd</color>
+    <color name="Bback2_2">#e5eaed</color>
+    <!-- time line color -->
+    <color name="bg_timeline_header">#efffffff</color>
+    <color name="timeline_point_line">#e265ee</color>
+    <color name="setting_title">#565b5f</color>
+    <color name="timeline_car_line">#f200f2</color>
+    <color name="timeline_foot_line">#5ece0b</color>
+    <color name="timeline_bike_line">#0ba2ce</color>
+    <color name="timeline_train_line">#007eff</color>
+    <color name="timeline_air_line">#00fffc</color>
+    <color name="timeline_boat_line">#51dcff</color>
+    <color name="timeline_lin_header">#ccFFFFFF</color>
+    <color name="text_timeline_adress">#8c9aa0</color>
+    <color name="text_timeline">#f2f5f9</color>
+    <color name="text_timeline_adressword">#48606d</color>
+    <color name="thumb_text">#4f5c63</color>
+    <color name="cover_image_bg">#3b444a</color>
+    <color name="add_image_bg">#c7d3e1</color>
+
+    <!-- time line bg -->
+    <color name="bg_timeline_travel">#303337</color>
+    <color name="bg_timeline_travel_pressed">#272a2e</color>
+    <color name="select_week_top_tv_press">#7d4378</color>
+    <color name="bg_color">#ffffff</color>
+    <color name="map_footer_text_color">#ffffff</color>
+    <color name="map_top_btn_color">#ffffff</color>
+    <color name="btntextcolor">#4779AB</color>
+    <!-- dialog中按钮字体颜色 -->
+    <color name="map_top_text_color">#97a6b2</color>
+    <color name="setting_item_pressed">#2b2f33</color>
+    <color name="login_title">#ffffff</color>
+    <color name="login_input">#99faffee</color>
+    <color name="bg_dashboard_dashbao">#4a8c9aa0</color>
+    <!-- dashboard color -->
+    <color name="bg_dashboard">#1d1f22</color>
+    <color name="text_timeline_middle">#8c9aa0</color>
+    <color name="full_transparent">#fafafa</color>
+    <color name="car_bg">#31c6da</color>
+    <color name="choose_conect">#31c6da</color>
+    <color name="choose_conect_pressed">#71d8e5</color>
+    <color name="gear_press">#c0ee20</color>
+    <color name="car_bg2">#f0f5f8</color>
+    <color name="item_color">#ffffff</color>
+    <!-- vehicle -->
+
+    <color name="bg">#fafafa</color>
+    <color name="progress_color_text">#8c9aa0</color>
+
+    <!--  -->
+    <color name="progress_bar_text">#8c9aa0</color>
+    <color name="blue">#0000FF</color>
+    <color name="setting_pressed">#55ffffff</color>
+    <color name="setting_pressed2">#e5eaed</color>
+
+    <!-- photo grid -->
+    <color name="nav_bg">#09adcb</color>
+    <color name="main_bg">#e6eaee</color>
+    <color name="nav_bg_trans">#8809adcb</color>
+    <!-- 深灰色 -->
+    <color name="shenhuise">#AAAAAA</color>
+    <color name="spots_dialog_color">#2D2D2D</color>
+    <color name="youmi_main_z">#5379f6</color>
+    <color name="youmi_main_x">#292929</color>
+    <color name="youmi_main_a">#ff986d</color>
+    <color name="youmi_main_b">#ea97be</color>
+    <color name="youmi_main_c">#f5c079</color>
+    <color name="youmi_main_d">#3b4245</color>
+    <color name="youmi_main_e">#699ccc</color>
+    <color name="youmi_main_f">#63c895</color>
+    <color name="youmi_main_g">#59b5c9</color>
+    <color name="youmi_main_h">#81c368</color>
+    <!-- 评论列表是否选中- -->
+    <color name="pinlun_hei">#5a5f64</color>
+    <color name="pinlun_hui">#a0a3a7</color>
+    <!-- 修改密码时获取验证码- -->
+    <color name="huoqu_hei">#1abc9c</color>
+    <color name="huoqu_hui">#8cddcd</color>
+    <!-- 修改密码时提交修改- -->
+    <color name="tijiao_hei">#a0a0a0</color>
+    <color name="tijiao_hui">#105f9a</color>
+    <!-- 评论按钮的背景颜色 -->
+    <color name="pinlun_true">#98b7da</color>
+    <color name="pinlun_false">#cbd2da</color>
+    <!-- 栏目背景色 -->
+    <color name="column_gray">#8b73a6</color>
+    <color name="column_red">#ea625c</color>
+    <color name="column_green">#b3d465</color>
+    <color name="column_lightgreen">#13b5b1</color>
+   
+
+</resources>

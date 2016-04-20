@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5sp"
+        android:background="#e9e9e9" />
+
+    <LinearLayout
+        android:id="@+id/ht_wuwife"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/wuwife"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/ht_wuwife_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/wuwife_btn"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/huati_layout_biaoqinga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/biaoqinga"
+        android:gravity="center"
+        android:text="@string/please_publish_look"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <com.example.view.RefreshLayout
+        android:id="@+id/myde_wipe_refresh_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff"
+        android:orientation="vertical" 
+        >
+
+        <ListView
+            android:id="@+id/myde_main_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:divider="#00000000"
+            android:scrollbars="none" >
+        </ListView>
+    </com.example.view.RefreshLayout>
+
+</LinearLayout>

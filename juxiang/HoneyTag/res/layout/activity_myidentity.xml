@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/huise6"
+    android:orientation="vertical"
+    tools:context=".AboutActivity" >
+
+    <com.example.view.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/huise5" />
+
+    <TextView
+        android:id="@+id/tv_level"
+        style="@style/textStyle_black_16sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawableLeft="@drawable/setting_level"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/entry"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/my_dengji" />
+
+    <TextView
+        android:id="@+id/tv_identity"
+        style="@style/textStyle_black_16sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawableLeft="@drawable/setting_identity"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/entry"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/my_id" />
+
+    <TextView
+        android:id="@+id/tv_otherSetting"
+        style="@style/textStyle_black_16sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawableLeft="@drawable/setting_more"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/entry"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/other_setting" />
+
+</LinearLayout>

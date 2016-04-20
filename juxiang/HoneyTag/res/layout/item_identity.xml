@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <com.daimajia.swipe.SwipeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sample2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/icon_01" >
+
+        <!-- Bottom View Start -->
+
+        <LinearLayout
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/tv_error"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#dfbaba"
+                android:gravity="center"
+                android:text="报错"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+            <!-- What you want to show -->
+        </LinearLayout>
+        <!-- Bottom View End -->
+        <!-- Surface View Start -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#f0f0f0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_01"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/identity_service_time"
+                    style="@style/textStyle_black_16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:text="2015"
+                    android:textColor="#888888" />
+
+                <TextView
+                    android:id="@+id/identity_service_name"
+                    style="@style/textStyle_black_16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="互联网  | 产品经理"
+                    android:textColor="#888888" />
+
+                <ImageView
+                    android:id="@+id/img_show"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/state_1" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--
+         <RelativeLayout
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:layout_toRightOf="@id/name"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/area"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:layout_below="@id/area"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            />-->
+        <!-- What you want to show in SurfaceView -->
+        <!-- </RelativeLayout> -->
+        <!-- Surface View End -->
+    </com.daimajia.swipe.SwipeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/icon_02"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/identity_gongsi"
+                style="@style/textStyle_black_18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/identity_dizhi"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#888888"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1sp"
+            android:background="#AAAAAA" />
+
+        <LinearLayout
+            android:id="@+id/identity_lin11"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/textStyle_black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:text="@string/name" />
+
+            <!-- 姓名 -->
+
+            <TextView
+                android:id="@+id/identity_username"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_weight="8"
+                android:background="#ffffff"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#888888"
+                android:textColorHint="#888888"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1sp"
+            android:background="#AAAAAA" />
+
+        <!-- 职位 -->
+
+        <LinearLayout
+            android:id="@+id/identity_lin12"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/textStyle_black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:text="@string/job" />
+
+            <!-- 职位 -->
+
+            <TextView
+                android:id="@+id/identity_position"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_weight="8"
+                android:background="#ffffff"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#888888"
+                android:textColorHint="#888888"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1sp"
+            android:background="#AAAAAA" />
+
+        <!-- 第一行 -->
+
+        <LinearLayout
+            android:id="@+id/identity_lin3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/textStyle_black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:text="@string/phone" />
+
+            <!-- 姓名 -->
+
+            <TextView
+                android:id="@+id/identity_tel"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_weight="8"
+                android:background="#ffffff"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#888888"
+                android:textColorHint="#888888"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1sp"
+            android:background="#AAAAAA" />
+
+        <!-- 第六行 -->
+
+        <LinearLayout
+            android:id="@+id/identity_lin6"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- 邮箱 -->
+
+            <TextView
+                style="@style/textStyle_black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:text="@string/email" />
+
+            <!-- 用户名 -->
+
+            <TextView
+                android:id="@+id/identity_email"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_weight="8"
+                android:background="#ffffff"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#888888"
+                android:textColorHint="#888888"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1sp"
+            android:background="#AAAAAA" />
+
+        <LinearLayout
+            android:id="@+id/identity_lin8"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/textStyle_black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:text="@string/phone_family" />
+
+            <!-- 用户名 -->
+
+            <TextView
+                android:id="@+id/identity_zuoji"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_weight="8"
+                android:background="#ffffff"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#888888"
+                android:textColorHint="#888888"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1sp"
+            android:background="#AAAAAA" />
+
+        <!-- 第五行 -->
+
+        <LinearLayout
+            android:id="@+id/identity_lin7"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- 传真 -->
+
+            <TextView
+                style="@style/textStyle_black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:text="传真" />
+
+            <!-- 用户名 -->
+
+            <TextView
+                android:id="@+id/identity_fax"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_weight="8"
+                android:background="#ffffff"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#888888"
+                android:textColorHint="#888888"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/identity_lin4"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="手机 2"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp" />
+
+            <!-- 姓名 -->
+
+            <TextView
+                android:id="@+id/identity_tel2"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_weight="8"
+                android:background="#ffffff"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#AAAAAA"
+                android:textColorHint="#AAAAAA"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1sp"
+            android:background="#AAAAAA" />
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shape_blue"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="报错"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shape_blue"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+        -->
+    </LinearLayout>
+
+</LinearLayout>

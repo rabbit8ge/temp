@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="新增了语言输入功能，解放了双手让语言更自由" />
+    </LinearLayout>
+
+</LinearLayout>

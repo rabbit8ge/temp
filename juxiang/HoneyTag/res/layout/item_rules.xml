@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/huise6"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/textStyle_black_14sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawablePadding="10dp"
+        android:gravity="left|top"
+        android:lineSpacingExtra="3dp"
+        android:text="行家说1.2 更新日志(2016年3月11日)" 
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/point" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/textStyle_black_14sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="新增了语言输入功能，解放了双手让语言更自由" />
+    </LinearLayout>
+
+</LinearLayout>

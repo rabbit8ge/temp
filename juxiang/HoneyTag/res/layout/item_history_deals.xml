@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+          <TextView
+                android:id="@+id/tv_title1"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="今天\n09:11" 
+                 android:textColor="@color/huise5"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:gravity="center|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/textStyle_black_18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="100.00" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/textStyle_black_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="余额宝-自动转入"
+                android:textColor="@color/black_light" />
+        </LinearLayout>
+
+      <!--   <TextView
+            android:id="@+id/remind_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:drawableRight="@drawable/entry" /> -->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:background="#e9e9e9" />
+
+</LinearLayout>

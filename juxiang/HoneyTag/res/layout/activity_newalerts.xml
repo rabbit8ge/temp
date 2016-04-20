@@ -1,0 +1,487 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/huise6"
+    android:orientation="vertical"
+    tools:context=".AboutActivity" >
+
+    <com.example.view.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/huise5" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_newAlerts"
+                    style="@style/textStyle_black_16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/newAlerts" />
+
+                <CheckBox
+                    android:id="@+id/check_newNotifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:checked="true"
+                    android:button="@drawable/switch_btn" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/huise6" />
+
+            <LinearLayout
+                android:id="@+id/linear_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_voice"
+                            style="@style/textStyle_black_16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:onClick="onClick"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/voice" />
+
+                        <CheckBox
+                            android:id="@+id/check_voice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:checked="true"
+                            android:button="@drawable/switch_btn" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/huise6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_vibration"
+                            style="@style/textStyle_black_16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:onClick="onClick"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/vibration" />
+
+                        <CheckBox
+                            android:id="@+id/check_vibration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:button="@drawable/switch_btn" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_newAlerts1"
+                    style="@style/textStyle_black_16sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/huise6"
+                    android:clickable="true"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/alert"
+                    android:textColor="#888888" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/textStyle_black_16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:onClick="onClick"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/DonotDisturbPeriod" />
+
+                        <CheckBox
+                            android:id="@+id/check_periodTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:button="@drawable/switch_btn" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/huise6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/textStyle_black_16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:onClick="onClick"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="10dp"
+                            android:text="从" />
+
+                        <TextView
+                            android:id="@+id/tv_startTime"
+                            style="@style/textStyle_black_16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:onClick="onClick"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="10dp"
+                            android:text="00:00" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/huise6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/textStyle_black_16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:onClick="onClick"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="10dp"
+                            android:text="到" />
+
+                        <TextView
+                            android:id="@+id/tv_endTime"
+                            style="@style/textStyle_black_16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:onClick="onClick"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="10dp"
+                            android:text="08:00" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/textStyle_black_16sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/huise6"
+                    android:clickable="true"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/noVoiceAndVibration"
+                    android:textColor="#888888" />
+            </LinearLayout>
+
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/textStyle_black_16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:onClick="onClick"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/my_topic" />
+
+                    <CheckBox
+                        android:id="@+id/check_myTopic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:button="@drawable/switch_btn" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/huise6" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/textStyle_black_16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:onClick="onClick"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/my_attend" />
+
+                    <CheckBox
+                        android:id="@+id/check_myParticipate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:button="@drawable/switch_btn" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/huise6" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/textStyle_black_16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:onClick="onClick"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/my_praise" />
+
+                    <CheckBox
+                        android:id="@+id/check_myAttention"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:button="@drawable/switch_btn" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/textStyle_black_16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/huise6"
+                android:clickable="true"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="有新动态时，是否需要新消息通知"
+                android:textColor="#888888" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/textStyle_black_16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/showdetails" />
+
+                <CheckBox
+                    android:id="@+id/check_showDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:button="@drawable/switch_btn" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/textStyle_black_16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/huise6"
+                android:clickable="true"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="若关闭，当收到新消息时，通知将不显示消息内容"
+                android:textColor="#888888" />
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

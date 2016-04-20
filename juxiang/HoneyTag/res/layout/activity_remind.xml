@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_root4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RemindActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff" >
+
+            <LinearLayout
+                android:id="@+id/remind_fanhui"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/remind_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/login_fanhui" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/details_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/remind"
+                style="@style/textStyle_black_18sp" />
+
+            <TextView
+                android:id="@+id/text_quanbu"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/all_read"
+                android:textColor="#a0a0a0"
+                android:textSize="15sp" >
+            </TextView>
+        </RelativeLayout>
+         <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/huise5" />
+
+        <TextView
+            android:id="@+id/gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="@string/have_not_new_remind"
+            android:textColor="#8d8d8d"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/rem_wuwife"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/wuwife"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/rem_wuwife_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/wuwife_btn"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    <!--     <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e5e5e5" /> -->
+ 
+        <com.example.view.RefreshLayout
+            android:id="@+id/rswipe_refresh_widget"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/remind_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#f3f3f3"
+                android:divider="#e9e9e9"
+                android:dividerHeight="1dp"
+                android:scrollbars="none" >
+            </ListView>
+
+        </com.example.view.RefreshLayout> 
+    </LinearLayout>
+	  
+</LinearLayout>

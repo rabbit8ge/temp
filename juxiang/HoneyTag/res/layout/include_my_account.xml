@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AboutActivity" >
+
+   
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_balance" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/textStyle_black_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/balance"
+            android:textColor="@color/black_light" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/textStyle_black_18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="￥100"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/mBtnRecharge"
+            style="@style/textStyle_black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_recharge_selector"
+            android:padding="6dp"
+            android:text="充值"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/mBtnWithdraw"
+            style="@style/textStyle_black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_withdraw_selector"
+            android:padding="6dp"
+            android:text="提现"
+            android:textColor="#8B8787" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#f8f8f5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/mTvAccumulatedRecharge "
+            style="@style/textStyle_black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="累积充值\n500"
+            android:textColor="@color/black_light" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#f8f8f5" />
+
+        <TextView
+            android:id="@+id/mTvAccumulatedWithdraw"
+            style="@style/textStyle_black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="累积提现\n500"
+            android:textColor="@color/black_light" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f8f8f5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/mTvAccumulatedIncome"
+            style="@style/textStyle_black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="累积收入\n500"
+            android:textColor="@color/black_light" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#f8f8f5" />
+
+        <TextView
+            android:id="@+id/mTvAccumulatedSpending"
+            style="@style/textStyle_black_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="累积支出\n500"
+            android:textColor="@color/black_light" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f8f8f5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#f8f8f5" />
+  
+
+
+
+</LinearLayout>

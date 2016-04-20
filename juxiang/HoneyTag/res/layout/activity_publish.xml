@@ -1,0 +1,260 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_root3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".PublishActivity" >
+
+    <LinearLayout
+        android:id="@+id/ltt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <!-- 标题栏 -->
+
+        <LinearLayout
+            android:id="@+id/title_l"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+
+                <ImageView
+                    android:id="@+id/publish_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="center"
+                    android:src="@drawable/close" />
+           
+
+            <TextView
+                android:id="@+id/public_fabiao"
+                style="@style/textStyle_black_18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:text="@string/topic"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/publish_tijiao"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:enabled="false"
+                android:text="@string/publish"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#b2b2b2" />
+
+      <!--   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/publish_zhuti"
+                style="@style/textStyle_black_16sp"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/main_topic"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/publish_huati"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:hint="@string/atmost8"
+                android:maxLength="8"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#b8b8b8"
+                android:textSize="18sp" >
+
+            </EditText>
+        </LinearLayout> -->
+        <!-- 发表输入框 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#f0f0f0" />
+
+        <EditText
+            android:id="@+id/publish_url"
+            style="@style/textStyle_black_16sp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5sp"
+            android:background="#ffffff"
+            android:gravity="left|top"
+            android:hint="添加链接"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="5sp"
+            android:textColor="#636363"
+            android:textColorHint="#AAAAAA"
+            android:visibility="gone" >
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#f0f0f0" />
+
+        <com.example.view.ClipboarEditText
+            android:id="@+id/publish_neirong"
+            style="@style/textStyle_black_16sp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#ffffff"
+            android:gravity="left|top"
+            android:hint="@string/atleast8"
+            android:maxLines="7"
+            android:paddingLeft="15sp"
+            android:paddingRight="10sp"
+            android:paddingTop="10sp"
+            android:textColor="#636363"
+            android:textColorHint="#AAAAAA" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+             >
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/publish_maxword"
+                android:text="@string/zero"
+                android:textColor="#b8b8b8"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/publish_maxword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="@string/hfz"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#f0f0f0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/publish_image"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:maxHeight="160dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/publish_delete"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/publish_image"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/del"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#f0f0f0" />
+
+        <RelativeLayout
+            android:id="@+id/loot"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff" >
+
+            <ImageButton
+                android:id="@+id/publish_biaoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/logo"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/publish_biaoqing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/brow" />
+
+            <ImageButton
+                android:id="@+id/publish_btn_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/photo" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/publish_face_container"
+            layout="@layout/chat_face_container"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,245 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModifyPassWordActivity"
+    android:orientation="vertical"
+    android:background="#e9e9e9" >
+    
+    <!-- 标题栏 -->
+    <LinearLayout 
+        
+        
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+               
+        <LinearLayout 
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/modify_fanhui">
+        <ImageButton 
+            
+            android:id="@+id/modify_btn"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_fanhui"/>
+        </LinearLayout>
+               
+
+        
+        <TextView
+            android:layout_marginRight="65dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"/>
+        
+           </LinearLayout>
+           
+    
+     <!-- 下半部分 -->
+
+       <LinearLayout 
+           
+           android:gravity="center"
+           android:layout_weight="4"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:background="#e9e9e9">
+           
+           
+         <com.example.view.CircleImageView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:src="@drawable/image"
+            
+              ></com.example.view.CircleImageView>
+           
+       </LinearLayout>
+
+       
+       <LinearLayout 
+           android:layout_weight="6"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:background="#e9e9e9">
+                  
+          <!-- 旧密码 -->
+          
+       <LinearLayout 
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:background="@drawable/textstely"
+           android:orientation="horizontal"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_gravity="center_vertical"
+           android:gravity="center_vertical">
+           
+           
+           
+          
+        
+        <ImageView 
+
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_password"/>
+        
+        
+        <EditText
+            android:singleLine="true"
+            android:layout_weight="10"
+            android:gravity="center_vertical"
+            android:id="@+id/modify_pwdone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:textSize="16sp"
+            android:textColor="#3B3A48"
+            android:textColorHint="#AAAAAA"
+            android:hint="原始密码"
+            android:password="true"
+            android:maxLength="12"/>
+        
+        
+
+       </LinearLayout>        
+                  
+       
+        <!-- 新密码 -->
+          
+       <LinearLayout 
+           
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:background="@drawable/textstely"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_gravity="center_vertical"
+           android:gravity="center_vertical">
+           
+           
+           
+          
+        
+        <ImageView 
+
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_password"/>
+        
+        
+        <EditText
+            android:singleLine="true"
+            android:layout_weight="10"
+            android:gravity="center_vertical"
+            android:id="@+id/modify_pwdtwo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:textSize="16sp"
+            android:textColor="#3B3A48"
+            android:textColorHint="#AAAAAA"
+            android:hint="新密码"
+            android:password="true"
+            android:maxLength="12"/>
+        
+        
+
+       </LinearLayout>   
+       
+       
+               <!-- 确认密码 -->
+          
+       <LinearLayout 
+           
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:background="@drawable/textstely"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_gravity="center_vertical"
+           android:gravity="center_vertical">
+           
+           
+           
+          
+        
+        <ImageView 
+
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_password"/>
+        
+        
+        <EditText
+            android:singleLine="true"
+            android:layout_weight="10"
+            android:gravity="center_vertical"
+            android:id="@+id/modify_pwdthree"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:textSize="16sp"
+            android:textColor="#3B3A48"
+            android:textColorHint="#AAAAAA"
+            android:hint="确认密码"
+            android:password="true"
+            android:maxLength="12"/>
+        
+        
+
+       </LinearLayout>  
+                  
+       <Button
+         android:layout_marginTop="30dp"
+         android:gravity="center"
+         android:layout_gravity="center_horizontal"
+         android:id="@+id/modify_modify"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:background="@drawable/brn_stely"
+         android:text="确定修改"
+         android:textColor="#ffffff"
+         android:textSize="18sp"/>     
+         
+       
+      
+       
+       
+       
+       
+       
+              </LinearLayout>
+       
+</LinearLayout>

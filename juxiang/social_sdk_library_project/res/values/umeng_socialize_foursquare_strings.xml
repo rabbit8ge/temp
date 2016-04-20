@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="foursquare_showword" translatable="false">Foursquare</string>
+    <string name="foursquare_no_client" translatable="false">未安装Foursquare客户端</string>
+    <string name="foursquare_content" translatable="false">Foursquare只支持纯图片分享</string>
+
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_pinlun"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:descendantFocusability="afterDescendants" 
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10sp"
+        android:background="#f0f0f0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/comment_all_l"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/comment_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/all_pinglun"
+                android:textColor="#5a5f64"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/comment_all_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/w" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#a0a3a7" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/comment_surprise_l"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/comment_surprise"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/surprise_pinglun"
+                android:textColor="#a0a3a7"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/comment_surprise_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/w"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#a0a3a7" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/comment_my_l"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/comment_my"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/my_pinglun"
+                android:textColor="#a0a3a7"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/comment_my_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/w"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#a0a3a7" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/comment_guanzhu_l"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/comment_guanzhu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/praise_pinglun"
+                android:textColor="#a0a3a7"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/comment_guanzhu_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/w"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#a0a3a7" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/details_triangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/triangle1" />
+
+</LinearLayout>
